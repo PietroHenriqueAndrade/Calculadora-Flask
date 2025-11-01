@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Estilo App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="calculator">
+        <!-- DISPLAY -->
+        <div class="display" id="display">0</div>
+
+        <!-- BOTÕES -->
+        <div class="buttons">
+            <!-- Linha 1 -->
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn operator">/</button>
+
+            <!-- Linha 2 -->
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn operator">*</button>
+
+            <!-- Linha 3 -->
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn operator">-</button>
+
+            <!-- Linha 4 -->
+            <button class="btn number zero">0</button>
+            <button class="btn clear">C</button>
+            <button class="btn operator">+</button>
+
+            <!-- Linha extra -->
+            <button class="btn operator" id="percent">%</button>
+            <button class="btn operator" id="sqrt">√</button>
+            <button class="btn operator" id="power">^</button>
+
+            <!-- Igual -->
+            <button class="btn equals">=</button>
+        </div>
+
+        <!-- HISTÓRICO -->
+        <div class="history">
+            <h3>Histórico</h3>
+            <ul id="history-list">
+                {% for item in history %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

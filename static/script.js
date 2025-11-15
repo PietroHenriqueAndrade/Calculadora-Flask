@@ -10,10 +10,6 @@ const powerButton = document.getElementById('power');
 
 let shouldResetDisplay = false;
 
-// =====================
-// Funções básicas
-// =====================
-
 // Adiciona número no display
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -35,10 +31,6 @@ operatorButtons.forEach(button => {
         }
     });
 });
-
-// =====================
-// Funções avançadas
-// =====================
 
 // Porcentagem
 percentButton.addEventListener('click', () => {
@@ -66,9 +58,6 @@ powerButton.addEventListener('click', () => {
     }
 });
 
-// =====================
-// Igual
-// =====================
 equalsButton.addEventListener('click', () => {
     try {
         let expr = display.textContent;
@@ -80,7 +69,6 @@ equalsButton.addEventListener('click', () => {
             return;
         }
 
-        // Substitui "^" por "**" para o JS
         expr = expr.replace(/\^/g, "**");
 
         // Verifica divisão por zero
@@ -111,9 +99,7 @@ equalsButton.addEventListener('click', () => {
     shouldResetDisplay = true;
 });
 
-// =====================
 // Limpar display
-// =====================
 clearButton.addEventListener('click', () => {
     display.textContent = "0";
     shouldResetDisplay = false;

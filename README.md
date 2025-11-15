@@ -55,12 +55,13 @@ A aplicação traz funções matemáticas comuns, operações adicionais como po
 
 ## 📌 Observações
 
--O histórico é salvo usando Flask Session com chave secreta gerada automaticamente.
--Toda vez que o botão `=` é pressionado, o cálculo é enviado ao backend via `fetch().`
--A validação impede erros comuns como divisão por zero e caracteres inválidos.
--Projeto criado para fins educacionais e prática de Flask + Frontend.
+- O histórico é salvo usando Flask Session com chave secreta gerada automaticamente.
+- Toda vez que o botão `=` é pressionado, o cálculo é enviado ao backend via `fetch()`.
+- A validação impede erros comuns como divisão por zero e caracteres inválidos.
+- Projeto criado para fins educacionais e prática de Flask + Frontend.
 
 ---
+
 
 ## 👨‍💻 Autor
 

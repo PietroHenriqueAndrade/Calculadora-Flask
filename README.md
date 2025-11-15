@@ -22,18 +22,6 @@ A aplicação traz funções matemáticas comuns, operações adicionais como po
 
 ---
 
-## 📂 Estrutura
-
-📁 Calculadora-Flask
-├── app.py → Servidor Flask
-├── /templates
-│ └── index.html → Interface principal
-├── /static
-  ├── style.css → Estilos da calculadora
-  └── script.js → Lógica da calculadora (frontend)
-
----
-
 ## ⚙️ Como executar
 
 1. Clone o repositório:
